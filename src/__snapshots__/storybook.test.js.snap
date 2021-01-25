@@ -1,0 +1,661 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots CodeMania/ForumView Default Forum View 1`] = `<forum />`;
+
+exports[`Storyshots CodeMania/Leaderboard Default Leader Board 1`] = `
+<div>
+  Ritesh
+  , 
+  10
+  , 
+  1
+</div>
+`;
+
+exports[`Storyshots CodeMania/PostCard Default Post Card 1`] = `
+<div
+  className="item"
+>
+  <div
+    className="content"
+  >
+    <a
+      className="header"
+    >
+      E-sign API for PDF documents
+    </a>
+    <div
+      className="meta"
+    >
+      <span
+        className="cinema"
+      >
+        Ritesh Mehrotra
+      </span>
+    </div>
+    <div
+      className="description"
+    >
+      lorem sdfmsaofas
+    </div>
+    <div
+      className="extra"
+    >
+      <div
+        className="ui label"
+        onClick={[Function]}
+      >
+        Java
+      </div>
+      <div
+        className="ui label"
+        onClick={[Function]}
+      >
+        API
+      </div>
+      <div
+        className="ui label"
+        onClick={[Function]}
+      >
+        Concurrency
+      </div>
+    </div>
+    <div
+      className="ui threaded comments"
+    >
+      <h3
+        className="ui dividing header"
+      >
+        Comments
+      </h3>
+      <div
+        className="comment"
+      >
+        <a
+          className="avatar"
+        >
+          <img
+            src="https://react.semantic-ui.com/images/avatar/small/matt.jpg"
+          />
+        </a>
+        <div
+          className="content"
+        >
+          <a
+            className="author"
+          >
+            Matt
+          </a>
+          <div
+            className="metadata"
+          >
+            <span>
+              Today at 5:42PM
+            </span>
+          </div>
+          <div
+            className="text"
+          >
+            How artistic!
+          </div>
+          <div
+            className="actions"
+          >
+            <a>
+              Reply
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        className="comment"
+      >
+        <a
+          className="avatar"
+        >
+          <img
+            src="https://react.semantic-ui.com/images/avatar/small/elliot.jpg"
+          />
+        </a>
+        <div
+          className="content"
+        >
+          <a
+            className="author"
+          >
+            Elliot Fu
+          </a>
+          <div
+            className="metadata"
+          >
+            <span>
+              Yesterday at 12:30AM
+            </span>
+          </div>
+          <div
+            className="text"
+          >
+            <p>
+              This has been very useful for my research. Thanks as well!
+            </p>
+          </div>
+          <div
+            className="actions"
+          >
+            <a>
+              Reply
+            </a>
+          </div>
+        </div>
+        <div
+          className="ui comments"
+        >
+          <div
+            className="comment"
+          >
+            <a
+              className="avatar"
+            >
+              <img
+                src="https://react.semantic-ui.com/images/avatar/small/jenny.jpg"
+              />
+            </a>
+            <div
+              className="content"
+            >
+              <a
+                className="author"
+              >
+                Jenny Hess
+              </a>
+              <div
+                className="metadata"
+              >
+                <span>
+                  Just now
+                </span>
+              </div>
+              <div
+                className="text"
+              >
+                Elliot you are always so right :)
+              </div>
+              <div
+                className="actions"
+              >
+                <a>
+                  Reply
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="comment"
+      >
+        <a
+          className="avatar"
+        >
+          <img
+            src="https://react.semantic-ui.com/images/avatar/small/joe.jpg"
+          />
+        </a>
+        <div
+          className="content"
+        >
+          <a
+            className="author"
+          >
+            Joe Henderson
+          </a>
+          <div
+            className="metadata"
+          >
+            <span>
+              5 days ago
+            </span>
+          </div>
+          <div
+            className="text"
+          >
+            Dude, this is awesome. Thanks so much
+          </div>
+          <div
+            className="actions"
+          >
+            <a>
+              Reply
+            </a>
+          </div>
+        </div>
+      </div>
+      <form
+        className="ui reply form"
+        onSubmit={[Function]}
+      >
+        <div
+          className="field"
+        >
+          <textarea
+            aria-describedby={null}
+            onChange={[Function]}
+            onInput={[Function]}
+            rows={3}
+          />
+        </div>
+        <button
+          className="ui icon primary left labeled button"
+          onClick={[Function]}
+        >
+          <i
+            aria-hidden="true"
+            className="edit icon"
+            onClick={[Function]}
+          />
+          Add Reply
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots CodeMania/Project Active Project Card 1`] = `
+<div
+  className="ui green card"
+  onClick={[Function]}
+>
+  <div
+    className="content"
+  >
+    <div
+      className="header"
+    >
+      ReactJS
+    </div>
+    <div
+      className="meta"
+    >
+      <div
+        className="ui label"
+        onClick={[Function]}
+      >
+        Ritesh
+      </div>
+    </div>
+    <div
+      className="description"
+    >
+      New React project
+    </div>
+  </div>
+  <div
+    className="extra content"
+  >
+    <i
+      aria-hidden="true"
+      className="user times icon"
+      onClick={[Function]}
+    />
+    4 contributors
+    <button
+      className="ui linkedin right floated button"
+      onClick={[Function]}
+    >
+      <i
+        aria-hidden="true"
+        className="eye icon"
+        onClick={[Function]}
+      />
+      View
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots CodeMania/Project Default Project Card 1`] = `
+<div
+  className="ui green card"
+  onClick={[Function]}
+>
+  <div
+    className="content"
+  >
+    <div
+      className="header"
+    >
+      ReactJS
+    </div>
+    <div
+      className="meta"
+    >
+      <div
+        className="ui label"
+        onClick={[Function]}
+      >
+        Ritesh
+      </div>
+    </div>
+    <div
+      className="description"
+    >
+      New React project
+    </div>
+  </div>
+  <div
+    className="extra content"
+  >
+    <i
+      aria-hidden="true"
+      className="user times icon"
+      onClick={[Function]}
+    />
+    4 contributors
+    <button
+      className="ui linkedin right floated button"
+      onClick={[Function]}
+    >
+      <i
+        aria-hidden="true"
+        className="eye icon"
+        onClick={[Function]}
+      />
+      View
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots CodeMania/Project Inactive Project Card 1`] = `
+<div
+  className="ui grey card"
+  onClick={[Function]}
+>
+  <div
+    className="content"
+  >
+    <div
+      className="header"
+    >
+      ReactJS
+    </div>
+    <div
+      className="meta"
+    >
+      <div
+        className="ui label"
+        onClick={[Function]}
+      >
+        Ritesh
+      </div>
+    </div>
+    <div
+      className="description"
+    >
+      New React project
+    </div>
+  </div>
+  <div
+    className="extra content"
+  >
+    <i
+      aria-hidden="true"
+      className="user times icon"
+      onClick={[Function]}
+    />
+    4 contributors
+    <button
+      className="ui linkedin right floated button"
+      onClick={[Function]}
+    >
+      <i
+        aria-hidden="true"
+        className="eye icon"
+        onClick={[Function]}
+      />
+      View
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots CodeMania/ProjectsView Default Projects View 1`] = `
+<div
+  className="ui cards"
+>
+  <div
+    className="ui green card"
+    onClick={[Function]}
+  >
+    <div
+      className="content"
+    >
+      <div
+        className="header"
+      >
+        React
+      </div>
+      <div
+        className="meta"
+      >
+        <div
+          className="ui label"
+          onClick={[Function]}
+        >
+          Ritesh
+        </div>
+      </div>
+      <div
+        className="description"
+      >
+        This is a new project
+      </div>
+    </div>
+    <div
+      className="extra content"
+    >
+      <i
+        aria-hidden="true"
+        className="user times icon"
+        onClick={[Function]}
+      />
+      4 contributors
+      <button
+        className="ui linkedin right floated button"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="eye icon"
+          onClick={[Function]}
+        />
+        View
+      </button>
+    </div>
+  </div>
+  <div
+    className="ui green card"
+    onClick={[Function]}
+  >
+    <div
+      className="content"
+    >
+      <div
+        className="header"
+      />
+      <div
+        className="meta"
+      >
+        <div
+          className="ui label"
+          onClick={[Function]}
+        >
+          Satya
+        </div>
+      </div>
+      <div
+        className="description"
+      />
+    </div>
+    <div
+      className="extra content"
+    >
+      <i
+        aria-hidden="true"
+        className="user times icon"
+        onClick={[Function]}
+      />
+      4 contributors
+      <button
+        className="ui linkedin right floated button"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="eye icon"
+          onClick={[Function]}
+        />
+        View
+      </button>
+    </div>
+  </div>
+  <div
+    className="ui green card"
+    onClick={[Function]}
+  >
+    <div
+      className="content"
+    >
+      <div
+        className="header"
+      />
+      <div
+        className="meta"
+      >
+        <div
+          className="ui label"
+          onClick={[Function]}
+        >
+          Max
+        </div>
+      </div>
+      <div
+        className="description"
+      />
+    </div>
+    <div
+      className="extra content"
+    >
+      <i
+        aria-hidden="true"
+        className="user times icon"
+        onClick={[Function]}
+      />
+      4 contributors
+      <button
+        className="ui linkedin right floated button"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="eye icon"
+          onClick={[Function]}
+        />
+        View
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots CodeMania/TechTalks Default Talks View 1`] = `
+<div
+  className="ui items"
+>
+  <div
+    className="item"
+  >
+    <video
+      autoPlay={true}
+      controls={true}
+      height="240"
+      width="320"
+    >
+      <source
+        src="https://sia.sharepoint.com/sites/Communities_ITD/IT%20Learning/Forms/AllItems.aspx?originalPath=aHR0cHM6Ly9zaWEuc2hhcmVwb2ludC5jb20vOmY6L3MvQ29tbXVuaXRpZXNfSVREL0VxRnFkMjh0VHpSTGlhcXE1OGJhc0lRQi00TmFHZHlqeGMxSFFuNmo0WE55SGc%5FcnRpbWU9MXljdVZGMjcyRWc&id=%2Fsites%2FCommunities%5FITD%2FIT%20Learning%2FTech%20Talks%2FGremlin%20series%2FSession%201%2FTech%20Talk%20Gremin%20Series%20Intro%20to%20SRE%20Chaos%20and%20Gremlin%20%2Emp4&parent=%2Fsites%2FCommunities%5FITD%2FIT%20Learning%2FTech%20Talks%2FGremlin%20series%2FSession%201"
+      />
+    </video>
+    <div
+      className="content"
+    >
+      <a
+        className="header"
+      >
+        The age of micro-frontends
+      </a>
+      <div
+        className="meta"
+      >
+        Speaker: Ritesh Mehrotra
+      </div>
+      <div
+        className="description"
+      >
+        <p>
+          In recent years, we have done well to evolve from the big monolith, hard to change products, to developing small, independent, specific and highly scalable solutions in form of micro-services. Though one area, that hasn’t witnessed the revolution as yet in the front-end, plagued by complex, unstructured and hard to maintain implementations.
+        </p>
+        <p>
+          Won’t it be nice if you could develop front-ends with SRP, and as highly decoupled independent features that can be plugged with any web app, be it an age-old monolith, a SPA or PWA? Ever wondered if you could readily combine the powers of Angular, React and Vue in one single application?
+        </p>
+      </div>
+      <div
+        className="extra"
+      >
+        Published on: Jul 01 2019 
+      </div>
+    </div>
+  </div>
+  <div
+    className="item"
+  >
+    <video
+      autoPlay={true}
+      controls={true}
+      height="240"
+      width="320"
+    >
+      <source
+        src="https://youtu.be/0zC1_DoIae0"
+      />
+    </video>
+    <div
+      className="content"
+    >
+      <a
+        className="header"
+      >
+        Header
+      </a>
+      <div
+        className="meta"
+      >
+        Description
+      </div>
+      <div
+        className="description"
+      >
+        <img
+          className="ui image"
+          src="https://react.semantic-ui.com/images/wireframe/short-paragraph.png"
+        />
+      </div>
+      <div
+        className="extra"
+      >
+        Additional Details
+      </div>
+    </div>
+  </div>
+</div>
+`;
