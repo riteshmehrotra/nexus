@@ -18,7 +18,7 @@
   },
   "scripts": {
     "dev": "next",
-    "start": "next start",
+    "start": "cross-env NODE_ENV=production node server.js",
     "build": "next build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
