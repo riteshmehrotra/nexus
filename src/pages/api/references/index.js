@@ -1,4 +1,4 @@
-import {data} from '../../../data/referencesInfo';
+const data = require('../../../data/referencesInfo');
 
 
 export default function handler(req,res){

@@ -1,4 +1,4 @@
-import {data} from '../../../data/badgesInfo'
+const data = require('../../../data/badgesInfo');
 
 
 export default function handler(req, res) {

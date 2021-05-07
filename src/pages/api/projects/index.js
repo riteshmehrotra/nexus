@@ -1,4 +1,4 @@
-import {data} from '../../../data/projectInfo';
+const data = require('../../../data/projectInfo');
 
 
 export default function handler(req,res){
