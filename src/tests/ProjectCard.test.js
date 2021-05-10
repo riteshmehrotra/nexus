@@ -14,7 +14,7 @@ afterEach(()=>{
     console.error=original;
 })
 
-it('renders the Project in the default state', () => {
+xit('renders the Project in the default state', () => {
     console.error = jest.fn();
     render(<DefaultProjectCard {...DefaultProjectCard.args}/>);
     expect(console.error).not.toHaveBeenCalled();
