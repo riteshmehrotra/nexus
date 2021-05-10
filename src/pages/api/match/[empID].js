@@ -10,8 +10,6 @@ export default function handlerById({ query: { empID } }, res) {
 }
 
 function getMatchingProfiles(empID, interests) {
-    // let commonInterests = [];
-
     return data.filter((item) =>
         item.interests.find((interestToMatch) =>
             interests.includes(interestToMatch)
