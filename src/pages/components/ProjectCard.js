@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card, Button, Icon, Modal, Label, Container, Segment, Divider } from 'semantic-ui-react'
+import { Card, Button, Icon, Modal, Label, Divider } from 'semantic-ui-react'
 
 const ProjectCard = (props) => {
     const [state, dispatch] = React.useReducer(modalViewReducer, { open: false });
@@ -16,8 +16,8 @@ const ProjectCard = (props) => {
             </Label></Card.Description>
             <Card.Description>{description}</Card.Description>
         </Card.Content>
-        <Card.Content extra><Icon name="user times" ></Icon>{contributors} contributors<Button color="linkedin" floated='right' onClick={() => { dispatch({ type: 'open' }) }}>
-            <Icon name="eye"></Icon>View</Button></Card.Content>
+        <Card.Content extra><Icon name="user times" ></Icon>{contributors} contributors<Button color="black" floated='right' onClick={() => { dispatch({ type: 'open' }) }}>
+            <Icon name="eye" color='yellow'></Icon>View</Button></Card.Content>
             
     </Card>
         <Modal onClose={() => dispatch({ type: 'close' })} open={open}>

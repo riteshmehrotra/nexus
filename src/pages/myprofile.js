@@ -1,7 +1,6 @@
 import React from 'react';
-import { Item, Label, Image, Segment, Divider, Icon, Grid, GridColumn } from 'semantic-ui-react';
+import { Image, Segment, Divider, Icon, Grid } from 'semantic-ui-react';
 import useSWR from 'swr';
-import Activity from './components/Activity';
 import ListLabels from './components/ListLabels';
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
@@ -12,10 +11,9 @@ export default function myprofile() {
     return <Segment>
         <Grid columns={2}>
             <Divider vertical><Icon name='arrow circle right'></Icon></Divider>
-            <Grid.Column>
+            <Grid.Column textAlign='center'>
                 <Image src={data.picture}></Image>
                 <h1>{data.name}</h1>
-
             </Grid.Column>
             <Grid.Column>
                 <h3>{data.about}</h3>

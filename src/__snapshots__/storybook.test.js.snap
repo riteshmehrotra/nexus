@@ -301,12 +301,12 @@ exports[`Storyshots CodeMania/Project Active Project Card 1`] = `
     />
      contributors
     <button
-      className="ui linkedin right floated button"
+      className="ui black right floated button"
       onClick={[Function]}
     >
       <i
         aria-hidden="true"
-        className="eye icon"
+        className="yellow eye icon"
         onClick={[Function]}
       />
       View
@@ -365,12 +365,12 @@ exports[`Storyshots CodeMania/Project Default Project Card 1`] = `
     />
      contributors
     <button
-      className="ui linkedin right floated button"
+      className="ui black right floated button"
       onClick={[Function]}
     >
       <i
         aria-hidden="true"
-        className="eye icon"
+        className="yellow eye icon"
         onClick={[Function]}
       />
       View
@@ -429,12 +429,12 @@ exports[`Storyshots CodeMania/Project Inactive Project Card 1`] = `
     />
      contributors
     <button
-      className="ui linkedin right floated button"
+      className="ui black right floated button"
       onClick={[Function]}
     >
       <i
         aria-hidden="true"
-        className="eye icon"
+        className="yellow eye icon"
         onClick={[Function]}
       />
       View

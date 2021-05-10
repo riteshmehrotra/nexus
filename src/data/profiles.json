@@ -15,8 +15,8 @@
     {
         "empID": "003453567",
         "name": "Christian",
-        "about": "Passionate developer and keen learner. I love to network and explore new technologies",
-        "picture": "/images/avatar/christian.jpg",
+        "about": "Loves to code",
+        "picture": "/images/avatar/daniel.jpeg",
         "interests": [
             "Java",
             "Software Architecture",
@@ -26,8 +26,8 @@
     {
         "empID": "003453568",
         "name": "Joe",
-        "about": "Passionate developer and keen learner. I love to network and explore new technologies",
-        "picture": "/images/avatar/joe.jpg",
+        "about": "Looking to learn from community",
+        "picture": "/images/avatar/elliot.jpeg",
         "interests": [    
             "ReactJS",
             "Agile"
@@ -36,7 +36,7 @@
     {
         "empID": "003453569",
         "name": "Matthew",
-        "about": "Passionate developer and keen learner. I love to network and explore new technologies",
+        "about": "Dev at heart",
         "picture": "/images/avatar/joe.jpg",
         "interests": [    
             "Salesforce",
