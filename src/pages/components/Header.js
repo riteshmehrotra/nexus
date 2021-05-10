@@ -9,7 +9,7 @@ const Header = () => {
     const router = useRouter();
     const [currentMenu, setCurrentMenu] = useState(pathToTitle(router.pathname));
     const [currentIcon, setCurrentIcon] = useState("");
-    const onClickMenu = (name, icon) => { setCurrentMenu(name); setCurrentIcon(icon); }
+    const onClickMenu = (name, icon) => { setCurrentMenu(name);}// setCurrentIcon(icon); }
     return <div>
         <Menu stackable inverted>
             <Link href="/"><Menu.Item onClick={() => onClickMenu("Dashboard", "connectdevelop")} active={isActive("/", router.pathname)} ><h2><Icon color='orange' size='large' className={styles.Applogo} name='connectdevelop'></Icon>Nexus</h2></Menu.Item></Link>
@@ -21,7 +21,9 @@ const Header = () => {
             <Link href="/events"><Menu.Item onClick={() => onClickMenu("Events", "calendar alternate outline")} active={isActive("/events", router.pathname)}><Icon color='olive' name='calendar alternate outline'></Icon>Events</Menu.Item></Link>
             <Link href="/references"><Menu.Item onClick={() => onClickMenu("References", "newspaper outline")} active={isActive("/references", router.pathname)}><Icon color='teal' name='newspaper outline'></Icon>References</Menu.Item></Link>
             <Link href="/badges"><Menu.Item onClick={() => onClickMenu("Badges", "star")} active={isActive("/badges", router.pathname)}><Icon color='green' name='star'></Icon>Badges</Menu.Item></Link>
-            <Link href="/myactivities"><Menu.Item onClick={() => onClickMenu("My reputation", "star")} active={isActive("/myactivities", router.pathname)} position='right'><Icon color='orange' name='user'></Icon>My reputation</Menu.Item></Link>
+            <Link href="/directory"><Menu.Item onClick={() => onClickMenu("KrisMatch", "expand arrows alternate")} active={isActive("/directory", router.pathname)}><Icon color='red' name='expand arrows alternate'></Icon>KrisMatch</Menu.Item></Link>
+            {/* <Link href="/myactivities"><Menu.Item onClick={() => onClickMenu("My reputation", "star")} active={isActive("/myactivities", router.pathname)} position='right'><Icon color='orange' name='user'></Icon>My reputation</Menu.Item></Link> */}
+            <Link href="/myprofile"><Menu.Item onClick={() => onClickMenu("My profile", "star")} active={isActive("/myprofile", router.pathname)} position='right'><Icon color='orange' name='user'></Icon>My profile</Menu.Item></Link>
         </Menu>
         <Divider hidden></Divider>
         <Container>

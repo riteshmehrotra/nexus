@@ -10,7 +10,7 @@ const index = () => {
       <Grid.Row>
          <Grid.Column>
             <Card>
-               <Image src='/images/avatar/matthew.png' wrapped ui={false} />
+               <Image src='/images/avatar/tom.png' wrapped ui={false} />
                <Card.Content>
                   <Card.Header>Tom</Card.Header>
                   <Card.Meta>

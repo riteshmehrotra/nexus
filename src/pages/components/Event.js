@@ -10,7 +10,7 @@ return (<Item key={title}>
         <Item.Description>
             {description}
         </Item.Description>
-        <Item.Extra>Published on: Jul 01 2019 </Item.Extra>
+        <Item.Extra>Published on: NA</Item.Extra>
       </Item.Content>
     </Item>)
 }

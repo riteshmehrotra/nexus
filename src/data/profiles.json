@@ -1,0 +1,47 @@
+[
+    {
+        "empID": "003453566",
+        "name": "Tom",
+        "about": "Passionate developer and keen learner. I love to network and explore new technologies",
+        "picture": "/images/avatar/tom.png",
+        "interests": [
+            "Java",
+            "ReactJS",
+            "Flutter",
+            "Software Architecture",
+            "Agile"
+        ]
+    },
+    {
+        "empID": "003453567",
+        "name": "Christian",
+        "about": "Passionate developer and keen learner. I love to network and explore new technologies",
+        "picture": "/images/avatar/christian.jpg",
+        "interests": [
+            "Java",
+            "Software Architecture",
+            "Agile"
+        ]
+    },
+    {
+        "empID": "003453568",
+        "name": "Joe",
+        "about": "Passionate developer and keen learner. I love to network and explore new technologies",
+        "picture": "/images/avatar/joe.jpg",
+        "interests": [    
+            "ReactJS",
+            "Agile"
+        ]
+    },
+    {
+        "empID": "003453569",
+        "name": "Matthew",
+        "about": "Passionate developer and keen learner. I love to network and explore new technologies",
+        "picture": "/images/avatar/joe.jpg",
+        "interests": [    
+            "Salesforce",
+            "Apex"
+        ]
+    }
+
+]
