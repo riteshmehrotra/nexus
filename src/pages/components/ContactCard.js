@@ -6,7 +6,7 @@ import ListLabels from './ListLabels';
 const ContactCard = (props) => {
     const [state, dispatch] = React.useReducer(modalViewReducer, { open: false });
     const { open } = state;
-    let { name, picture, about, interests, empID } = props;
+    let { name, picture, about, interests, empID, email } = props;
     // let color = isActive ? "green" : "grey";
     return (<><Item width="100%" href={`/profiles/${empID}`} rel='noreferrer' target='_blank'>
         <Item.Image src={picture}></Item.Image>
@@ -16,7 +16,7 @@ const ContactCard = (props) => {
             <Item.Description>
                 {about}
             </Item.Description>
-            <Item.Extra><Button color="black" floated='right' onClick={() => { dispatch({ type: 'open' }) }}>
+            <Item.Extra><Button color="black" floated='right' as='a' href={`https://teams.microsoft.com/l/chat/0/0?users=${email}`} target='_blank' rel='noreferrer'>
             <Icon name="expand arrows alternate" color='red'></Icon>Connect</Button></Item.Extra>
         </Item.Content>
        

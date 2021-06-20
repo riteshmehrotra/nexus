@@ -4,6 +4,7 @@
         "name": "Ritesh Mehrotra",
         "about": "Passionate developer and keen learner. I love to network and explore new technologies",
         "picture": "/images/avatar/tom.png",
+        "email":"ritesh_mehrotra@singaporeair.com.sg",
         "interests": [
             "Java",
             "ReactJS",
@@ -22,6 +23,7 @@
         "name": "Christian",
         "about": "Loves to code",
         "picture": "/images/avatar/daniel.jpeg",
+        "email":"9reymark_diaz@singaporeair.com.sg",
         "interests": [
             "Java",
             "Software Architecture",
@@ -37,6 +39,7 @@
         "name": "Joe",
         "about": "Looking to learn from community",
         "picture": "/images/avatar/elliot.jpeg",
+        "email":"judah_tan@singaporeair.com.sg",
         "interests": [    
             "ReactJS",
             "Agile"
@@ -47,6 +50,7 @@
         "name": "Arvind Choudhary",
         "about": "Dev at heart",
         "picture": "/images/avatar/joe.jpg",
+        "email":"arvind_chaudhary@singaporeair.com.sg",
         "interests": [    
             "Salesforce",
             "Apex"

@@ -31,13 +31,9 @@ export default function myprofile() {
                     </Card.Content>
                     <Card.Content extra textAlign='center'>
                         <div>
-                            <Button color='black'>
+                            <Button color='black' as='a' href={`https://teams.microsoft.com/l/chat/0/0?users=${data.email}`} target='_blank' rel='noreferrer'>
                                 <Icon color='red' name='expand arrows alternate' />
                             Connect
-                            </Button>
-                            <Button color='black'>
-                                <Icon color='blue' name='chat' />
-                            Chat
                             </Button>
                         </div>
                     </Card.Content>
