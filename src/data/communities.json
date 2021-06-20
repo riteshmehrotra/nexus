@@ -1,0 +1,47 @@
+[
+    {
+        "empID": "003453566",
+        "communities": [
+            {
+                "title": "SIA IT Division",
+                "link": "https://web.yammer.com/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIxMjc0NTc2MyJ9/all"
+            },
+            {
+                "title": "Interest Group - Photography",
+                "link": "https://web.yammer.com/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIxMTk1NTI2NTUzNiJ9/new"
+            },
+            {
+                "title": "Interest Group - Running",
+                "link": "https://web.yammer.com/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIxMTk1NTI0OTE1MiJ9/all"
+            }
+        ]
+    },
+    {
+        "empID": "003453567",
+        "communities": [
+            {
+                "title": "SOAR as ONE",
+                "link": "https://web.yammer.com/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIxMzY0MTA3NCJ9/all"
+            },
+            {
+                "title": "SIA eSports Arena (S.E.A)",
+                "link": "https://web.yammer.com/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIzODQ2OTIxNDIwOCJ9/all"
+            }
+        ]
+    },
+    {
+        "empID": "003453568",
+        "communities": [
+            {
+                "title": "SOAR as ONE",
+                "link": "https://web.yammer.com/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIxMzY0MTA3NCJ9/all"
+            },
+            {
+                "title": "SIA eSports Arena (S.E.A)",
+                "link": "https://web.yammer.com/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIzODQ2OTIxNDIwOCJ9/all"
+            }
+        ]
+    }
+]
+
+

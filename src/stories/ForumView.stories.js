@@ -1,12 +1,12 @@
 import React from 'react';
 
-import forum from '../pages/forum';
+import Forum from '../pages/forum';
 
 export default {
   title: 'CodeMania/ForumView',
-  component: forum
+  component: Forum
 };
 
-const Template = (args) => <forum {...args} />;
+const Template = (args) => <Forum {...args} />;
 
 export const DefaultForumView = Template.bind({});

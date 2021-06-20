@@ -6,12 +6,12 @@ import ListLabels from './ListLabels';
 const ContactCard = (props) => {
     const [state, dispatch] = React.useReducer(modalViewReducer, { open: false });
     const { open } = state;
-    let { name, picture, about, interests } = props;
+    let { name, picture, about, interests, empID } = props;
     // let color = isActive ? "green" : "grey";
-    return (<><Item width="100%">
+    return (<><Item width="100%" href={`/profiles/${empID}`} rel='noreferrer' target='_blank'>
         <Item.Image src={picture}></Item.Image>
         <Item.Content>
-            <Item.Header>{name}</Item.Header>
+            <Item.Header >{name}</Item.Header>
             <Item.Meta><ListLabels>{interests}</ListLabels></Item.Meta>
             <Item.Description>
                 {about}

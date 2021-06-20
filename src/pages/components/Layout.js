@@ -2,11 +2,11 @@ import React from 'react'
 import Header from './Header';
 import { Container, Grid, GridColumn, Divider } from 'semantic-ui-react';
 
-const Layout = ({ children }) => {
+const Layout = ({ empID,children }) => {
     return <><Container fluid>
         <Grid centered columns={1}>
             <GridColumn>
-                <Header></Header>
+                <Header id={empID}></Header>
             </GridColumn>
             
         </Grid>

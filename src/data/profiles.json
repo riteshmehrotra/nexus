@@ -1,7 +1,7 @@
 [
     {
         "empID": "003453566",
-        "name": "Tom",
+        "name": "Ritesh Mehrotra",
         "about": "Passionate developer and keen learner. I love to network and explore new technologies",
         "picture": "/images/avatar/tom.png",
         "interests": [
@@ -10,6 +10,11 @@
             "Flutter",
             "Software Architecture",
             "Agile"
+        ],
+        "achievements": [
+            "Professional Scrum Master(PSM)",
+            "Professional Scrum Developer(PSD)",
+            "AWS Solution Architect"
         ]
     },
     {
@@ -21,6 +26,10 @@
             "Java",
             "Software Architecture",
             "Agile"
+        ],
+        "achievements": [
+            "Professional Scrum Master(PSM)",
+            "Professional Scrum Developer(PSD)"
         ]
     },
     {
@@ -35,7 +44,7 @@
     },
     {
         "empID": "003453569",
-        "name": "Matthew",
+        "name": "Arvind Choudhary",
         "about": "Dev at heart",
         "picture": "/images/avatar/joe.jpg",
         "interests": [    

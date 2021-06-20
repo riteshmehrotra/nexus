@@ -3,5 +3,5 @@ import Layout from './components/Layout';
 
 
 export default function MyApp({ Component, pageProps }) {
-    return <Layout> <Component {...pageProps} /></Layout>
+    return <Layout empID='003453566'> <Component {...pageProps} /></Layout>
   }
