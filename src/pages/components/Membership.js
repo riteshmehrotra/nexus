@@ -3,7 +3,7 @@ import { Item, ItemGroup, Header } from 'semantic-ui-react';
 import useSWR from 'swr';
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
-const Communities = ({id}) => {
+const Membership = ({id}) => {
     const { data, error } = useSWR(`/api/communities/${id}`, fetcher);
 
     if (error) return <div>Failed to load</div>
@@ -18,4 +18,4 @@ const Communities = ({id}) => {
 }
 
 
-export default Communities;
+export default Membership;

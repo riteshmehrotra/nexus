@@ -2,7 +2,7 @@ import React from 'react';
 import { Image, Segment, Divider, Icon, Label, Grid, LabelGroup, Container, Card, Header, ButtonGroup, Button } from 'semantic-ui-react';
 import useSWR from 'swr';
 import ListLabels from '../components/ListLabels';
-import Communities from '../components/communities';
+import Membership from '../components/Membership';
 import Rewards from '../components/Rewards';
 import { useRouter } from 'next/router'
 
@@ -50,7 +50,7 @@ export default function myprofile() {
                 <ListLabels>{data.interests}</ListLabels>
                 <Header>Professional licenses/Certifications</Header>
                 <LabelGroup><ListLabels>{data.achievements}</ListLabels></LabelGroup>
-                <Communities id={empID}></Communities>
+                <Membership id={empID}></Membership>
             </Grid.Column>
         </Grid.Row>
     </Grid>
