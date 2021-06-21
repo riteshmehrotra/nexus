@@ -13,7 +13,6 @@ export default function myprofile() {
     const router = useRouter();
     const { empID } = router.query;
     const { data, error } = useSWR(`/api/profiles/${empID}`, fetcher)
-    // const { data, error: errRewards } = useSWR('/api/profiles/003453566', fetcher)
 
     if (error) return <div>Failed to load</div>
     if (!data) return <div>Loading...</div>

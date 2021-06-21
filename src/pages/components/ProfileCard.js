@@ -3,6 +3,8 @@ import {Card, Image,Button, Icon} from 'semantic-ui-react';
 import Rewards from './Rewards';
 
 const ProfileCard = ({data})=>{
+    if (!data) return <div>Loading...</div>
+
     return  <Card fluid>
     <Image fluid src={data.picture} ></Image>
     <Card.Content>
