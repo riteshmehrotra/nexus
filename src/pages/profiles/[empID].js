@@ -5,6 +5,7 @@ import ListLabels from '../components/ListLabels';
 import Membership from '../components/Membership';
 import Rewards from '../components/Rewards';
 import { useRouter } from 'next/router'
+import ProfileCard from '../components/ProfileCard';
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 export default function myprofile() {
@@ -20,25 +21,7 @@ export default function myprofile() {
     return <Grid container centered divided columns={2}>
         <Grid.Row>
             <Grid.Column width={5}>
-                <Card fluid>
-                    <Image fluid src={data.picture} ></Image>
-                    <Card.Content>
-                        <Card.Header>{data.name}</Card.Header>
-                        <Card.Description>{data.about}</Card.Description>
-                    </Card.Content>
-                    <Card.Content extra>
-                        <Rewards id={empID}></Rewards>
-                    </Card.Content>
-                    <Card.Content extra textAlign='center'>
-                        <div>
-                            <Button color='black' as='a' href={`https://teams.microsoft.com/l/chat/0/0?users=${data.email}`} target='_blank' rel='noreferrer'>
-                                <Icon color='red' name='expand arrows alternate' />
-                            Connect
-                            </Button>
-                        </div>
-                    </Card.Content>
-                </Card>
-
+                <ProfileCard data={data}></ProfileCard>
                 {/* <a href={`https://teams.microsoft.com/_#/apps/a2da8768-95d5-419e-9441-3b539865b118/search?q=${data.name}`}>Chat</a> */}
             </Grid.Column>
             <Grid.Column>

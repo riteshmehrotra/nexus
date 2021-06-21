@@ -1,5 +1,5 @@
 import React from 'react';
-import { Item, ItemGroup, LabelGroup, Label } from 'semantic-ui-react';
+import { Icon,Item, ItemGroup, LabelGroup, Label } from 'semantic-ui-react';
 import useSWR from 'swr';
 import ListLabels from './ListLabels';
 
@@ -10,8 +10,8 @@ const Rewards = ({ id }) => {
     if (error) return <div>Failed to load</div>
     if (!data) return <div>Loading...</div>
     return <div>
-        <h4>Reputation <Label circular color='red'>{data.points}</Label></h4> 
-        <h4>Badges</h4>
+        <h4><Icon name="flag checkered" color='red'></Icon>Reputation <Label circular>{data.points}</Label></h4> 
+        <h4><Icon name="certificate" color='red'></Icon>Badges</h4>
         <LabelGroup>
             <ListLabels>{data.badges}</ListLabels>
         </LabelGroup>
