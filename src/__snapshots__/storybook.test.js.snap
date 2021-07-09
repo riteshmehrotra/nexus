@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots CodeMania/ForumView Default Forum View 1`] = `<forum />`;
+exports[`Storyshots CodeMania/ForumView Default Forum View 1`] = `
+<div>
+  Loading...
+</div>
+`;
 
 exports[`Storyshots CodeMania/PostCard Default Post Card 1`] = `
 <div

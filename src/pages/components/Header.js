@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { Menu, Icon, Divider, Container } from 'semantic-ui-react';
+import { Menu, Icon, Divider, Container, Label } from 'semantic-ui-react';
 import styles from './logostyle.module.css';
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 
-const Header = ({id}) => {
+const Header = ({ id }) => {
     const router = useRouter();
     const [currentMenu, setCurrentMenu] = useState(pathToTitle(router.pathname));
     const [currentIcon, setCurrentIcon] = useState("");
-    const onClickMenu = (name, icon) => { setCurrentMenu(name);}// setCurrentIcon(icon); }
+    const onClickMenu = (name, icon) => { setCurrentMenu(name); }// setCurrentIcon(icon); }
     return <div>
         <Menu stackable inverted>
             <Link href="/"><Menu.Item onClick={() => onClickMenu("Dashboard", "connectdevelop")} active={isActive("/", router.pathname)} ><h2><Icon color='orange' size='large' className={styles.Applogo} name='connectdevelop'></Icon>Nexus</h2></Menu.Item></Link>
@@ -22,7 +22,12 @@ const Header = ({id}) => {
             <Link href="/references"><Menu.Item onClick={() => onClickMenu("References", "newspaper outline")} active={isActive("/references", router.pathname)}><Icon color='teal' name='newspaper outline'></Icon>References</Menu.Item></Link>
             <Link href="/badges"><Menu.Item onClick={() => onClickMenu("Badges", "star")} active={isActive("/badges", router.pathname)}><Icon color='green' name='star'></Icon>Badges</Menu.Item></Link>
             <Link href={`/directory/${id}`}><Menu.Item onClick={() => onClickMenu("KrisMatch", "expand arrows alternate")} active={isActive(`/directory${id}`, router.pathname)}><Icon color='red' name='expand arrows alternate'></Icon>KrisMatch</Menu.Item></Link>
-            <Link href={`/profiles/${id}`}><Menu.Item onClick={() => onClickMenu("My profile", "star")} active={isActive(`/profiles/${id}`, router.pathname)} position='right'><Icon color='orange' name='user'></Icon>My profile</Menu.Item></Link>
+            <Menu.Menu position='right'>
+                <Link href={`/profiles/${id}`}><Menu.Item onClick={() => onClickMenu("My profile", "star")} active={isActive(`/profiles/${id}`, router.pathname)} position='right'><Icon color='red' name='bell'></Icon>Notifications<Label color='red' circular>
+                    2
+      </Label></Menu.Item></Link>
+                <Link href={`/profiles/${id}`}><Menu.Item onClick={() => onClickMenu("My profile", "star")} active={isActive(`/profiles/${id}`, router.pathname)} position='right'><Icon color='orange' name='user'></Icon>My profile</Menu.Item></Link>
+            </Menu.Menu>
         </Menu>
         <Divider hidden></Divider>
         <Container>
@@ -47,13 +52,13 @@ const pathToTitle = (path) => {
 //                 let route = routeLabelMap.find((item)=>item.path==="/")
 //                 return {"name":route.label,"icon":route.icon};
 //             }
-            
+
 //         default:
 //             {
 //                 let route = routeLabelMap.find((item)=>item.path==="/")
 //                 return {"name":route.label,"icon":route.icon};
 //             }
-       
+
 //     }
 // }
 
