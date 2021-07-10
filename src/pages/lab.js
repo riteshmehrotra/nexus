@@ -16,7 +16,8 @@ export default function Projects() {
     if (!data) return <div>Loading...</div>
     let projectCardMap = data.map((item) => <ProjectCard key={item.title} {...item}></ProjectCard>)
     const suggestions = findSuggestions(description);
-    let suggestionLabels = suggestions.map(suggestion => <Label onClick={(e) => addSkills(e.target.textContent)}>{suggestion}</Label>)
+    let suggestionLabels = suggestions.map(suggestion => <Label onClick={(e) => addSkills(current=>[...current,e.target.textContent])}>{suggestion}</Label>)
+    let skillLabels = skills.map(each=>`${each}, `)
     return <Grid>
         <Grid.Row>
             <Button color="black" floated='right' onClick={() => { dispatch({ type: 'open' }) }}>
@@ -37,7 +38,7 @@ export default function Projects() {
                             </Form.Field>
                             <Form.Field>
                                 <label>Add skills</label>
-                                <div contentEditable='true'>{skills}</div>
+                                <div contentEditable='true'>{skillLabels}</div>
                             </Form.Field>
                             <Form.Checkbox label="Approval needed to join?" />
                         </Form>
@@ -69,10 +70,6 @@ const modalViewReducer = (state, action) => {
 
     if (action.type === 'open')
         return { open: true };
-}
-
-const suggester = (e) => {
-    alert(e);
 }
 
 const suggestionsHidden = (suggestions) => suggestions.length > 0 ? false : true;
