@@ -23,7 +23,7 @@ const Header = ({ id }) => {
             <Link href="/badges"><Menu.Item onClick={() => onClickMenu("Badges", "star")} active={isActive("/badges", router.pathname)}><Icon color='green' name='star'></Icon>Badges</Menu.Item></Link>
             <Link href={`/directory/${id}`}><Menu.Item onClick={() => onClickMenu("KrisMatch", "expand arrows alternate")} active={isActive(`/directory${id}`, router.pathname)}><Icon color='red' name='expand arrows alternate'></Icon>KrisMatch</Menu.Item></Link>
             <Menu.Menu position='right'>
-                <Link href={`/profiles/${id}`}><Menu.Item onClick={() => onClickMenu("My profile", "star")} active={isActive(`/profiles/${id}`, router.pathname)} position='right'><Icon color='red' name='bell'></Icon>Notifications<Label color='red' circular>
+                <Link href={`/profiles/${id}?showNotifications=true`}><Menu.Item onClick={() => onClickMenu("My profile", "star")} active={isActive(`/profiles/${id}`, router.pathname)} position='right'><Icon color='red' name='bell'></Icon>Notifications<Label color='red' circular>
                     2
       </Label></Menu.Item></Link>
                 <Link href={`/profiles/${id}`}><Menu.Item onClick={() => onClickMenu("My profile", "star")} active={isActive(`/profiles/${id}`, router.pathname)} position='right'><Icon color='orange' name='user'></Icon>My profile</Menu.Item></Link>

@@ -8,7 +8,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 export default function Projects() {
     const { data, error } = useSWR('/api/projects', fetcher)
     const [state, dispatch] = React.useReducer(modalViewReducer, { open: false });
-    const [skills, addSkills]=React.useState([])
+    const [skills, addSkills] = React.useState([])
     const [description, setDescription] = React.useState("");
 
     const { open } = state;
@@ -16,7 +16,7 @@ export default function Projects() {
     if (!data) return <div>Loading...</div>
     let projectCardMap = data.map((item) => <ProjectCard key={item.title} {...item}></ProjectCard>)
     const suggestions = findSuggestions(description);
-    let suggestionLabels = suggestions.map(suggestion => <Label onClick={(e)=>addSkills(e.target.textContent)}>{suggestion}</Label>)
+    let suggestionLabels = suggestions.map(suggestion => <Label onClick={(e) => addSkills(e.target.textContent)}>{suggestion}</Label>)
     return <Grid>
         <Grid.Row>
             <Button color="black" floated='right' onClick={() => { dispatch({ type: 'open' }) }}>
@@ -38,7 +38,7 @@ export default function Projects() {
                             <Form.Field>
                                 <label>Add skills</label>
                                 <div contentEditable='true'>{skills}</div>
-                                </Form.Field>
+                            </Form.Field>
                             <Form.Checkbox label="Approval needed to join?" />
                         </Form>
                     </Modal.Description>
@@ -80,12 +80,12 @@ const suggestionsHidden = (suggestions) => suggestions.length > 0 ? false : true
 const findSuggestions = (description) => {
     const suggestions = [];
 
-    if(description.length<=0)
+    if (description.length <= 0)
         return suggestions;
     const mappings = [{ key: "mobile", value: ['iOS', 'Android', 'React native'] },
     { key: "web", value: ['ReactJS', 'Javascript', 'HTML'] },
     { key: "design", value: ['Design thinking', 'UXP'] },
-    { key: "project", value: ['Project management', 'Planning']}]
+    { key: "project", value: ['Project management', 'Planning'] }]
 
     const descAsArray = description.split(" ");
     mappings.map((each) => {
