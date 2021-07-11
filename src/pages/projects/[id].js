@@ -20,9 +20,10 @@ export default function projects() {
             <Grid.Column width={12}>
                 <h1>{title}</h1>
                 <h4>{author}</h4>
+                {(techStack)?
                 <Label.Group>
                     <ListLabels>{techStack.split(",")}</ListLabels>
-                </Label.Group>
+                </Label.Group>:<div/>}
                 <Divider hidden></Divider>
                 {description}
                 <Divider></Divider>

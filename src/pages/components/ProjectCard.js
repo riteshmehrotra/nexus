@@ -11,9 +11,13 @@ const ProjectCard = (props) => {
         <Card.Content>
             <Card.Header><a href={`/projects/${id}`} target="_blank" rel="noreferrer">{title}</a></Card.Header>
             <Card.Meta><Label color='green' ribbon>{author}</Label></Card.Meta>
-            <Card.Description><Label.Group>
+            <Card.Description>
+            {(techStack)?
+                <Label.Group>
                 <ListLabels>{techStack.split(",")}</ListLabels>
-            </Label.Group></Card.Description>
+            </Label.Group>
+            :<div/>}
+            </Card.Description>
             <Card.Description>{description}</Card.Description>
         </Card.Content>
         <Card.Content extra>
