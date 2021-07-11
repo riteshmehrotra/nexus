@@ -1,18 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Card, Button, Icon, Modal, Label, Divider, Header } from 'semantic-ui-react'
+import ListLabels from './ListLabels';
 
 const ProjectCard = (props) => {
-    let { author, title, description, techStack, contributors, requiresApproval } = props;
+    let { author, title, description, techStack, contributors, requiresApproval,id } = props;
     const [state, dispatch] = React.useReducer(modalViewReducer, { open: false, needsApproval: false });
     const { open, needsApproval } = state;
-    return (<><Card style={{ padding: '5px' }} raised>
+    return (<><Card style={{ padding: '5px' }} raised >
         <Card.Content>
-            <Card.Header>{title}</Card.Header>
-            <Card.Meta><Label>{author}</Label></Card.Meta>
-            <Card.Description><Label as='a' color='green' ribbon>
-                {techStack}
-            </Label></Card.Description>
+            <Card.Header><a href={`/projects/${id}`} target="_blank" rel="noreferrer">{title}</a></Card.Header>
+            <Card.Meta><Label color='green' ribbon>{author}</Label></Card.Meta>
+            <Card.Description><Label.Group>
+                <ListLabels>{techStack.split(",")}</ListLabels>
+            </Label.Group></Card.Description>
             <Card.Description>{description}</Card.Description>
         </Card.Content>
         <Card.Content extra>
