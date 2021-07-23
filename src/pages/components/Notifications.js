@@ -9,7 +9,7 @@ export default function Notifications(){
         <Item><Item.Content><Item.Header><a href={`/profiles/003453568`} rel="noreferrer" target="_blank">Judah</a> posted in lab</Item.Header>
             <Item.Description> <a href='#'>Dinner and Dance</a></Item.Description></Item.Content></Item>
         <Item><Item.Content>
-            <Item.Header><a href={`/profiles/003453567`} rel="noreferrer" target="_blank">Mack</a> asked a question</Item.Header>
+            <Item.Header><a href={`/profiles/003453567`} rel="noreferrer" target="_blank">Arvind</a> asked a question</Item.Header>
              <Item.Description><a href="#">Anyone here playing Mobile Legends? How to use Esmeralda?</a></Item.Description></Item.Content></Item>
         </Item.Group>
     </div>

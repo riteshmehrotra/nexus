@@ -70,4 +70,8 @@ const pathToTitle = (path) => {
 //     }
 // ]
 
+
+function dateDifference(date1, date){
+    
+}
 export default Header;
