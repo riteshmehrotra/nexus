@@ -15,7 +15,7 @@ export default function directory() {
     return <Grid columns={3}>
         <Grid.Row>
             <Grid.Column width={7}>
-                <h2>Profiles insipired from your <a href="/myprofile">interests</a></h2>
+                <h2>Profiles insipired from your <a href="/profiles/003453566">interests</a></h2>
             </Grid.Column>
         </Grid.Row>
         <Grid.Row>
