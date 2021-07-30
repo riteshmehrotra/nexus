@@ -26,8 +26,8 @@ const LoggedInMenu = ({id}) => {
 
     return <Menu stackable inverted>
         <Link href="/"><Menu.Item onClick={() => onClickMenu("Dashboard", "connectdevelop")} active={isActive("/", router.pathname)} ><h2><Icon color='orange' size='large' className={styles.Applogo} name='connectdevelop'></Icon>Nexus</h2></Menu.Item></Link>
-        <Link href={`/directory/${id}`}><Menu.Item onClick={() => onClickMenu("KrisMatch", "expand arrows alternate")} active={isActive(`/directory${id}`, router.pathname)}><Icon color='red' name='expand arrows alternate'></Icon>KrisMatch</Menu.Item></Link>
         <Link href="/lab"><Menu.Item onClick={() => onClickMenu("Lab", "lab")} active={isActive("/lab", router.pathname)}><Icon color='yellow' name='lab'></Icon>Lab</Menu.Item></Link>
+        <Link href={`/directory/${id}`}><Menu.Item onClick={() => onClickMenu("KrisMatch", "expand arrows alternate")} active={isActive(`/directory${id}`, router.pathname)}><Icon color='red' name='expand arrows alternate'></Icon>KrisMatch</Menu.Item></Link>
         {/* <Link href="/insights"><Menu.Item onClick={() => onClickMenu("Insights", "eye")} active={isActive("/insights", router.pathname)}><Icon color='red' name='eye'></Icon>Insights</Menu.Item></Link> */}
         {/* <Link href="/challenges"><Menu.Item active={isActive("/challenges", router.pathname)}><Icon color='green' name='chess board'></Icon>Challenges</Menu.Item></Link> */}
         <Link href="/forum"><Menu.Item onClick={() => onClickMenu("Forum", "question")} active={isActive("/forum", router.pathname)}><Icon color='blue' name='question'></Icon>Forum</Menu.Item></Link>
