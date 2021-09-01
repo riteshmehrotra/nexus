@@ -1,15 +1,14 @@
 import React from 'react';
-import { Image, Segment, Divider, Icon, Label, Grid, LabelGroup, Container, Card, Header, ButtonGroup, Button } from 'semantic-ui-react';
+import {  Grid, LabelGroup, Header} from 'semantic-ui-react';
 import useSWR from 'swr';
 import ListLabels from '../components/ListLabels';
 import Membership from '../components/Membership';
-import Rewards from '../components/Rewards';
 import { useRouter } from 'next/router'
 import ProfileCard from '../components/ProfileCard';
 import Notifications from '../components/Notifications';
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
-export default function myprofile() {
+export default function Myprofile() {
 
     const router = useRouter();
     const { empID, showNotifications } = router.query;

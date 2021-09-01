@@ -1,5 +1,5 @@
 import React from 'react';
-import {Item} from 'semantic-ui-react';
+import {Item, Button, Icon} from 'semantic-ui-react';
 
 const Event = (props)=>{
     let {title,date,description} = props;
@@ -11,6 +11,12 @@ return (<Item key={title}>
             {description}
         </Item.Description>
         <Item.Extra>Published on: NA</Item.Extra>
+        <Item.Extra>
+          <Button primary floated='right'>
+            Register
+            <Icon name='right chevron' />
+          </Button>
+        </Item.Extra>
       </Item.Content>
     </Item>)
 }
